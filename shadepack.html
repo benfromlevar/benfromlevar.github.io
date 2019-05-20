@@ -149,7 +149,10 @@
 	var isAndroid = /Android/i.test(navigator.userAgent);
     var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
       navigator.userAgent &&
-      navigator.userAgent.indexOf('CriOS') == -1 &&;
+      navigator.userAgent.indexOf('CriOS') == -1 &&
+      navigator.userAgent.indexOf('Instagram') == -1 &&
+	  navigator.userAgent.indexOf('Snapchat') == -1 &&
+      navigator.userAgent.indexOf('FxiOS') == -1;
 	var isCriOS = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
       navigator.userAgent &&
       navigator.userAgent.indexOf('CriOS') > -1 &&
