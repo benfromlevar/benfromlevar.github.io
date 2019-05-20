@@ -181,12 +181,18 @@
 	    document.getElementById('ARdiv2').innerHTML = '<img src="assets/images/portfolio/teslablue.jpg" alt="Tesla Wheel Blue">';
 	    document.getElementById('ARdiv3').innerHTML = '<img src="assets/images/portfolio/teslavolt.jpg" alt="Tesla Wheel Volt">';
       }
-    } else {
-        document.getElementById('ARdiv').innerHTML = '<img src="assets/images/portfolio/teslared.jpg" alt="Tesla Wheel Red"><p>I AM DESKTOP</p>';
+    } else if (isAndroid) {
+        document.getElementById('ARdiv').innerHTML = '<img src="assets/images/portfolio/teslared.jpg" alt="Tesla Wheel Red"><p>I AM ANDROID</p>';
 	    document.getElementById('ARdiv1').innerHTML = '<img src="assets/images/portfolio/teslablack.jpg" alt="Tesla Wheel Black">';
 	    document.getElementById('ARdiv2').innerHTML = '<img src="assets/images/portfolio/teslablue.jpg" alt="Tesla Wheel Blue">';
 	    document.getElementById('ARdiv3').innerHTML = '<img src="assets/images/portfolio/teslavolt.jpg" alt="Tesla Wheel Volt">';
-    }
+    } else {
+		document.getElementById('ARdiv').innerHTML = '<img src="assets/images/portfolio/teslared.jpg" alt="Tesla Wheel Red"><p>I AM DESKTOP</p>';
+	    document.getElementById('ARdiv1').innerHTML = '<img src="assets/images/portfolio/teslablack.jpg" alt="Tesla Wheel Black">';
+	    document.getElementById('ARdiv2').innerHTML = '<img src="assets/images/portfolio/teslablue.jpg" alt="Tesla Wheel Blue">';
+	    document.getElementById('ARdiv3').innerHTML = '<img src="assets/images/portfolio/teslavolt.jpg" alt="Tesla Wheel Volt">';
+	}
+	  
   </script>
   
   <!-- Footer-->
