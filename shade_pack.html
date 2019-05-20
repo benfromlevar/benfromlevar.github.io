@@ -90,7 +90,9 @@
         <div class="portfolio-item automotive">
           <div class="portfolio-item-wrapper">
             <div class="portfolio-item-img">
-              <div id="ARdiv">
+              <div id="ARdiv" style="display: block;">
+  </div>
+				<div id="log">
                 <p> teehee </p>
               </div>
             </div>
@@ -103,7 +105,7 @@
         <div class="portfolio-item automotive">
           <div class="portfolio-item-wrapper">
             <div class="portfolio-item-img">
-              <div id="ARdiv1">
+              <div id="log1">
                 <p> teehee </p>
               </div>
             </div>
@@ -116,7 +118,7 @@
         <div class="portfolio-item automotive">
           <div class="portfolio-item-wrapper">
             <div class="portfolio-item-img">
-              <div id="ARdiv2">
+              <div id="log2">
                 <p> teehee </p>
               </div>
             </div>
@@ -129,7 +131,7 @@
         <div class="portfolio-item automotive">
           <div class="portfolio-item-wrapper">
             <div class="portfolio-item-img">
-              <div id="ARdiv3">
+              <div id="log3">
                 <p> teehee </p>
               </div>
             </div>
@@ -142,50 +144,31 @@
       </div>
     </div>
   </section>
-  <!-- Portfolio end-->
+  <!-- Portfolio end--> 
   
-  <script>
+<script>
     var isiMobile = /iPhone|iPad|iPod/i.test(navigator.userAgent);
-	var isAndroid = /Android/i.test(navigator.userAgent);
     var isSafari = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
       navigator.userAgent &&
       navigator.userAgent.indexOf('CriOS') == -1 &&
       navigator.userAgent.indexOf('Instagram') == -1 &&
-	  navigator.userAgent.indexOf('Snapchat') == -1 &&
       navigator.userAgent.indexOf('FxiOS') == -1;
-	var isCriOS = navigator.vendor && navigator.vendor.indexOf('Apple') > -1 &&
-      navigator.userAgent &&
-      navigator.userAgent.indexOf('CriOS') > -1 &&
-      navigator.userAgent.indexOf('Instagram') == -1 &&
-	  navigator.userAgent.indexOf('Snapchat') == -1 &&
-      navigator.userAgent.indexOf('FxiOS') == -1;
+    var ARdivx = document.getElementById("ARdiv");
 
     if (isiMobile) {
       if (isSafari) {
-        document.getElementById('ARdiv').innerHTML = '<a href="https://s3.amazonaws.com/fw-ar-assets/TeslaWheelRed.usdz" rel="ar"> <img alt="Tesla Wheel Red" src="assets/images/portfolio/teslared.jpg"> </a>';
-		document.getElementById('ARdiv').innerHTML = '<a href="https://s3.amazonaws.com/fw-ar-assets/TeslaWheelBlack.usdz" rel="ar"> <img alt="Tesla Wheel Black" src="assets/images/portfolio/teslablack.jpg"> </a>';
-		document.getElementById('ARdiv').innerHTML = '<a href="https://s3.amazonaws.com/fw-ar-assets/TeslaWheelBlue.usdz" rel="ar"> <img alt="Tesla Wheel Blue" src="assets/images/portfolio/teslablue.jpg"> </a>';
-		document.getElementById('ARdiv').innerHTML = '<a href="https://s3.amazonaws.com/fw-ar-assets/TeslaWheelGreen.usdz" rel="ar"> <img alt="Tesla Wheel Blue" src="assets/images/portfolio/teslavolt.jpg"> </a>';
-      }
-	  if (isCriOS) {
-        document.getElementById('ARdiv').innerHTML = '<img src="assets/images/portfolio/teslared.jpg" alt="Tesla Wheel Red">';
-	    document.getElementById('ARdiv1').innerHTML = '<img src="assets/images/portfolio/teslablack.jpg" alt="Tesla Wheel Black">';
-	    document.getElementById('ARdiv2').innerHTML = '<img src="assets/images/portfolio/teslablue.jpg" alt="Tesla Wheel Blue">';
-	    document.getElementById('ARdiv3').innerHTML = '<img src="assets/images/portfolio/teslavolt.jpg" alt="Tesla Wheel Volt">';
+        ARdivx.style.display = "block";
+        document.getElementById('log').innerHTML = '<a href="https://s3.us-east-2.amazonaws.com/fw-ar-archive/HalfEvilSkateboard.usdz" rel="ar"> <img alt="Half Evil Deck" src="https://s3.us-east-2.amazonaws.com/fw-ar-archive/viar2.png"> </a>';
       } else {
-        document.getElementById('ARdiv').innerHTML = '<img src="assets/images/portfolio/teslared.jpg" alt="Tesla Wheel Red">';
-	    document.getElementById('ARdiv1').innerHTML = '<img src="assets/images/portfolio/teslablack.jpg" alt="Tesla Wheel Black">';
-	    document.getElementById('ARdiv2').innerHTML = '<img src="assets/images/portfolio/teslablue.jpg" alt="Tesla Wheel Blue">';
-	    document.getElementById('ARdiv3').innerHTML = '<img src="assets/images/portfolio/teslavolt.jpg" alt="Tesla Wheel Volt">';
+        ARdivx.style.display = "none";
+        document.getElementById('log').innerHTML = '<img src="assets/images/portfolio/teslared.jpg" alt="Trulli">';
       }
     } else {
-        document.getElementById('ARdiv').innerHTML = '<img src="assets/images/portfolio/teslared.jpg" alt="Tesla Wheel Red">';
-	    document.getElementById('ARdiv1').innerHTML = '<img src="assets/images/portfolio/teslablack.jpg" alt="Tesla Wheel Black">';
-	    document.getElementById('ARdiv2').innerHTML = '<img src="assets/images/portfolio/teslablue.jpg" alt="Tesla Wheel Blue">';
-	    document.getElementById('ARdiv3').innerHTML = '<img src="assets/images/portfolio/teslavolt.jpg" alt="Tesla Wheel Volt">';
+      ARdivx.style.display = "none";
+      document.getElementById('log').innerHTML = '<img src="assets/images/portfolio/teslared.jpg" alt="Trulli">';
     }
-  </script>
-  
+  </script>	
+	
   <!-- Footer-->
   <footer class="footer">
     <div class="footer-widgets">
