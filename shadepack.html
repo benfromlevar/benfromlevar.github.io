@@ -91,7 +91,6 @@
           <div class="portfolio-item-wrapper">
             <div class="portfolio-item-img">
               <div id="ARdiv" style="display: block;">
-    <a href="https://s3.us-east-2.amazonaws.com/fw-ar-archive/HalfEvilSkateboard.usdz" rel="ar"> <img alt="Half Evil Deck" src="https://s3.us-east-2.amazonaws.com/fw-ar-archive/viar2.png"> </a>
   </div>
 				<div id="log">
                 <p> teehee </p>
@@ -159,14 +158,14 @@
     if (isiMobile) {
       if (isSafari) {
         ARdivx.style.display = "block";
-        document.getElementById('log').innerHTML = 'Content Shown';
+        document.getElementById('log').innerHTML = '<a href="https://s3.us-east-2.amazonaws.com/fw-ar-archive/HalfEvilSkateboard.usdz" rel="ar"> <img alt="Half Evil Deck" src="https://s3.us-east-2.amazonaws.com/fw-ar-archive/viar2.png"> </a>';
       } else {
         ARdivx.style.display = "none";
-        document.getElementById('log').innerHTML = 'Content Hidden';
+        document.getElementById('log').innerHTML = '<img src="assets/images/portfolio/teslared.jpg" alt="Trulli">';
       }
     } else {
       ARdivx.style.display = "none";
-      document.getElementById('log').innerHTML = 'Content Hidden';
+      document.getElementById('log').innerHTML = '<img src="assets/images/portfolio/teslared.jpg" alt="Trulli">';
     }
   </script>	
 	
