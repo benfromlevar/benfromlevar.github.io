@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/static/css/main.194c792d.chunk.css",
+    "main.js": "/static/js/main.a52c7ada.chunk.js",
+    "main.js.map": "/static/js/main.a52c7ada.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.657a0926.js",
+    "runtime-main.js.map": "/static/js/runtime-main.657a0926.js.map",
+    "static/js/2.997cf4de.chunk.js": "/static/js/2.997cf4de.chunk.js",
+    "static/js/2.997cf4de.chunk.js.map": "/static/js/2.997cf4de.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.4194b5458632569a576dc0f3cbcf36cc.js": "/precache-manifest.4194b5458632569a576dc0f3cbcf36cc.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.194c792d.chunk.css.map": "/static/css/main.194c792d.chunk.css.map",
+    "static/media/apple_1k.hdr": "/static/media/apple_1k.1b4ec3dd.hdr",
+    "static/media/autoshop_1k.hdr": "/static/media/autoshop_1k.72921fcf.hdr",
+    "static/media/levAR_logo.svg": "/static/media/levAR_logo.629d3eb9.svg",
+    "static/media/m2tlya.glb": "/static/media/m2tlya.6863ebb6.glb"
+  }
+}
